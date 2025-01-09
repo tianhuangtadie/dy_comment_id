@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "抖音评论id 提取",
+    "version": "1.0",
+    "description": "右键评论右上方 ···  ,然后点击复制信息即可获取评论id",
+    "permissions": [
+        "scripting",
+        "clipboardWrite"
+    ],
+    "host_permissions": [
+        "https://www.douyin.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.douyin.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
